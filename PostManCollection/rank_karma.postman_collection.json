@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "1d98676b-259f-4d8c-8167-40b12034f73d",
+		"name": "rank_karma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11858059"
+	},
+	"item": [
+		{
+			"name": "findRankWithBonus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/find-rank-with-bonus/:user_id?per_page=5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"find-rank-with-bonus",
+						":user_id"
+					],
+					"query": [
+						{
+							"key": "per_page",
+							"value": "5"
+						}
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/find-rank-with-bonus/:user_id?per_page=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"find-rank-with-bonus",
+								":user_id"
+							],
+							"query": [
+								{
+									"key": "per_page",
+									"value": "5"
+								}
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Jun 2022 21:48:15 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Jun 2022 21:48:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://127.0.0.1:8000/css/style.css\">\n<table class=\"table table-striped table-bordered table-hover\">\n    <thead>\n        <tr>\n            <th> img</th>\n            <th> id</th>\n            <th> username</th>\n            <th> karma score</th>\n            <th> Rank</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr >\n            <td>\n                <img src=\"https://source.unsplash.com/random?user=95867\" alt=\"profile Pic\" height=\"50\" width=\"50\">\n            </td>\n            <td> 14437 </td>\n            <td> Prof. Delphine Kub </td>\n            <td> 33377 </td>\n            <td> 12489 </td>\n        </tr>\n        <tr >\n            <td>\n                <img src=\"https://source.unsplash.com/random?user=66749\" alt=\"profile Pic\" height=\"50\" width=\"50\">\n            </td>\n            <td> 4140 </td>\n            <td> Damaris Gusikowski </td>\n            <td> 33374 </td>\n            <td> 12490 </td>\n        </tr>\n        <tr  class=\"active\" >\n            <td>\n                <img src=\"https://source.unsplash.com/random?user=15397\" alt=\"profile Pic\" height=\"50\" width=\"50\">\n            </td>\n            <td> 4 </td>\n            <td> Jermaine Marks DVM </td>\n            <td> 33371 </td>\n            <td> 12491 </td>\n        </tr>\n        <tr >\n            <td>\n                <img src=\"https://source.unsplash.com/random?user=75168\" alt=\"profile Pic\" height=\"50\" width=\"50\">\n            </td>\n            <td> 5034 </td>\n            <td> Gideon Windler </td>\n            <td> 33358 </td>\n            <td> 12492 </td>\n        </tr>\n        <tr >\n            <td>\n                <img src=\"https://source.unsplash.com/random?user=73894\" alt=\"profile Pic\" height=\"50\" width=\"50\">\n            </td>\n            <td> 5972 </td>\n            <td> Clark Hill </td>\n            <td> 33343 </td>\n            <td> 12493 </td>\n        </tr>\n    </tbody>\n</table>"
+				}
+			]
+		},
+		{
+			"name": "findRank",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/find-rank/:user_id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"find-rank",
+						":user_id"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/find-rank/:user_id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"find-rank",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Jun 2022 21:49:15 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Jun 2022 21:49:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 14437,\n            \"username\": \"Prof. Delphine Kub\",\n            \"karmaScore\": 33377,\n            \"rank\": 12489,\n            \"url\": \"https://source.unsplash.com/random?user=95867\"\n        },\n        {\n            \"id\": 4140,\n            \"username\": \"Damaris Gusikowski\",\n            \"karmaScore\": 33374,\n            \"rank\": 12490,\n            \"url\": \"https://source.unsplash.com/random?user=66749\"\n        },\n        {\n            \"id\": 4,\n            \"username\": \"Jermaine Marks DVM\",\n            \"karmaScore\": 33371,\n            \"rank\": 12491,\n            \"url\": \"https://source.unsplash.com/random?user=15397\"\n        },\n        {\n            \"id\": 5034,\n            \"username\": \"Gideon Windler\",\n            \"karmaScore\": 33358,\n            \"rank\": 12492,\n            \"url\": \"https://source.unsplash.com/random?user=75168\"\n        },\n        {\n            \"id\": 5972,\n            \"username\": \"Clark Hill\",\n            \"karmaScore\": 33343,\n            \"rank\": 12493,\n            \"url\": \"https://source.unsplash.com/random?user=73894\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

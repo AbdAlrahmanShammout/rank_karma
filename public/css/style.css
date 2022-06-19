@@ -1,0 +1,28 @@
+table {
+    width: 80%;
+    border: 1px solid #595959;
+}
+
+th, td {
+    width: 20%;
+    text-align: center;
+    vertical-align: center;
+    border: 0.5px solid #595959;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+}
+
+tr.active {
+    background-color: rgba(92, 238, 0, 0.3);
+}
+
+caption {
+    padding: 0.3em;
+    color: #fff;
+    background: #000;
+}
+
+th {
+    background: #eee;
+}
