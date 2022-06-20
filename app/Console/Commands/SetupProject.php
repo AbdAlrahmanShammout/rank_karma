@@ -29,7 +29,7 @@ class SetupProject extends Command
     public function handle()
     {
         $this->info('In the normal situation, the users who are in the attached file will be entered.');
-        $loadTesting = $this->confirm('Do you want to enter data for heavy load testing (15,000 users)?'
+        $loadTesting = $this->confirm('Do you want to enter data for the performance test (15,000 users)?'
             , false);
 
         $this->info('start setup');
