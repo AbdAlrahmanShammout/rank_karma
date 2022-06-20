@@ -19,7 +19,7 @@ class SetupProject extends Command
      *
      * @var string
      */
-    protected $description = 'Create tables & enter data';
+    protected $description = 'Create tables & enter data.';
 
     /**
      * Execute the console command.
